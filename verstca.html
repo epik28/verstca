@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background: #6a4e77;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header-top div {
+      font-size: 14px;
+    }
+
+    nav {
+      background: #8a5e91;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .product p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .product span {
+      display: block;
+      font-size: 16px;
+      color: #8a5e91;
+      font-weight: bold;
+    }
+
+    .recommendations {
+      max-width: 1200px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .recommendations h2 {
+      color: #6a4e77;
+      margin-bottom: 15px;
+    }
+
+    .recommendations .product {
+      display: inline-block;
+      width: 30%;
+      margin: 0 1%;
+    }
+
+    footer {
+      background: #6a4e77;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .footer-bottom {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-top">
+      <div>+7 (800) 123-22-22 | Санкт-Петербург, ул. Фрунзе, д. 5</div>
+      <div>Вход | Корзина: 0 товаров</div>
+    </div>
+    <h1>Интернет-магазин</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Главная</a>
+    <a href="#">Каталог</a>
+    <a href="#">Новинки</a>
+    <a href="#">Популярное</a>
+    <a href="#">Доставка и оплата</a>
+    <a href="#">Контакты</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="product">
+      <h3>Женская одежда</h3>
+      <p>Удобно и стильно</p>
+    </div>
+    <div class="product">
+      <h3>Мужская одежда</h3>
+      <p>Классика и комфорт</p>
+    </div>
+    <div class="product">
+      <h3>Детская одежда</h3>
+      <p>Для самых маленьких</p>
+    </div>
+    <div class="product">
+      <h3>Аксессуары</h3>
+      <p>Элегантные мелочи</p>
+    </div>
+  </div>
+
+  <!-- Recommendations -->
+  <div class="recommendations">
+    <h2>Специальные предложения</h2>
+    <div class="product">
+      <h3>Платье</h3>
+      <span>900 руб.</span>
+    </div>
+    <div class="product">
+      <h3>Рубашка</h3>
+      <span>1200 руб.</span>
+    </div>
+    <div class="product">
+      <h3>Брюки</h3>
+      <span>1500 руб.</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Интернет-магазин. Все права защищены.</p>
+    <div class="footer-bottom">Контакты | Политика конфиденциальности</div>
+  </footer>
+</body>
+</html>
